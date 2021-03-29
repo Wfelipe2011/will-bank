@@ -1,0 +1,17 @@
+<section class="container">
+  <h2 class="title">Transferências</h2>
+  <table class="table">
+    <thead class="table__header">
+      <th class="table__header__content">Data</th>
+      <th class="table__header__content">Valor</th>
+      <th class="table__header__content">Destino</th>
+    </thead>
+    <tbody>
+      <tr class="table__line" *ngFor="let transferencia of transferencias, let i = index">
+        <td class="table__line__content">{{transferencia?.data | date: "short"}}</td>
+        <td class="table__line__content">{{transferencia?.valor | currency}}</td>
+        <td class="table__line__content">{{transferencia?.destino}}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>

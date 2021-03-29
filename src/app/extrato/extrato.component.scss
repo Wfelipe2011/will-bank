@@ -1,0 +1,32 @@
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: var(--primary);
+}
+
+.table {
+  text-align: center;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(4, 8, 231, 0.3);
+
+  &__header {
+    color: var(--primary);
+
+    &__content{
+      padding: 10px;
+      border-bottom: 2px solid var(--primary);
+    }
+  }
+
+  &__line {
+    margin-bottom: 10px;
+    border-radius: 4px;
+
+    &__content {
+      padding: 10px;
+      border-bottom: 1px solid var(--cinza-claro);
+    }
+  }
+}

@@ -1,4 +1,5 @@
-import { Component } from "@angular/core";
+import { Component, EventEmitter, Output } from "@angular/core";
+
 
 @Component({
   selector: 'app-nova-transferencia',
@@ -8,7 +9,22 @@ import { Component } from "@angular/core";
 
 export class NovaTranferenciaComponent {
 
+  @Output() aoTransferir = new EventEmitter<any>();
+
+  valor: number;
+  destino: string;
+
   trasferir() {
     console.log('Solicitada nova trasnferencia')
+
+    const valorEmitir = { valor: this.valor, destino: this.destino };
+    this.aoTransferir.emit(valorEmitir)
+
+    this.limparCampos();
+  }
+
+  limparCampos(){
+    this.valor = undefined;
+    this.destino = undefined;
   }
 }

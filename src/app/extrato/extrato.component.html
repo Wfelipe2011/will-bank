@@ -6,7 +6,7 @@
       <th class="table__header__content">Valor</th>
       <th class="table__header__content">Destino</th>
     </thead>
-    <tbody>
+    <tbody *ngIf="transferencias.length > 0; else listaVazia">
       <tr class="table__line" *ngFor="let transferencia of transferencias, let i = index">
         <td class="table__line__content">{{transferencia?.data | date: "short"}}</td>
         <td class="table__line__content">{{transferencia?.valor | currency}}</td>
@@ -15,3 +15,6 @@
     </tbody>
   </table>
 </section>
+<ng-template #listaVazia>
+  <td class="table__line__content">Nenhuma operação cadastrada!</td>
+</ng-template>

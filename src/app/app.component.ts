@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { TransferenciaService } from './services/transferencia.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,13 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'will-bank';
-  // precisa inicializar []
-  transferencias: any[] = [];//Objeto criado para receber os dados do formulario.
 
-  transferir($event){// event
-    console.log($event)
-    const transferencia = {...$event, data: new Date()}
-    this.transferencias.push(transferencia)
+  constructor(private service: TransferenciaService){}
 
-  }
+
 }

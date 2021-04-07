@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TransferenciaService } from './services/transferencia.service';
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -8,9 +8,16 @@ import { TransferenciaService } from './services/transferencia.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'will-bank';
+  title = 'Total Bank';
 
-  constructor(private service: TransferenciaService){}
+
+  constructor(
+    private translate: TranslateService,
+  ) { 
+    translate.use('fr');
+    translate.get('NAV')
+  }
+
 
 
 }

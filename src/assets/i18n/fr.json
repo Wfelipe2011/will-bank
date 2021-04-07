@@ -1,0 +1,18 @@
+{
+    "NAV": {
+        "LINK": "Nouveau transfert",
+        "LOGO": "Banque totale"
+    },
+    "TRANSFER": {
+        "TITLE": "Nouveau transfert",
+        "DESTINY": "Destin",
+        "VALUE": "Valeur",
+        "TRANSFER": "Transfert"
+    },
+    "EXTRACT": {
+        "DATE": "Date",
+        "VALUE": "Valeur",
+        "DESTINY": "Destin",
+        "MESSAGE": "Aucune opération enregistrée!"
+    }
+}

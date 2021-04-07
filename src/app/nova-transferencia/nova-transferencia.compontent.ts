@@ -2,6 +2,7 @@ import { TransferenciaService } from './../services/transferencia.service';
 import { Component, EventEmitter, Output } from "@angular/core";
 import { Transferencia } from '../models/transferencia.model';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -17,7 +18,9 @@ export class NovaTranferenciaComponent {
   valor: number;
   destino: string;
 
-  constructor(private service: TransferenciaService, private router: Router){}
+  constructor(private service: TransferenciaService, private router: Router, translate: TranslateService){
+    translate.get('TRANSFER')
+  }
 
   trasferir() {
     console.log('Solicitada nova trasnferencia')

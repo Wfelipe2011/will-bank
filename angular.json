@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "will-bank"
+    }
+  },
+  "defaultProject": "will-bank",
+  "cli": {
+    "analytics": false
+  }
 }

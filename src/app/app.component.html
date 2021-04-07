@@ -1,6 +1,12 @@
 <header>
-  <a routerLink="extrato">WillBank</a>
-  <a routerLink="nova-transferencia" routerLinkActive="ativo">Nova Transferência</a>
+
+  <a routerLink="extrato">{{'NAV.LOGO' | translate}}</a>
+  <select>
+    <option value="en">Inglês</option>
+    <option value="pt">Português</option>
+    <option value="fr">Frances</option>
+  </select>
+  <a routerLink="nova-transferencia" routerLinkActive="ativo">{{'NAV.LINK' | translate}}</a>
 </header>
 <main>
 <router-outlet></router-outlet>

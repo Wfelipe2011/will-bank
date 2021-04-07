@@ -1,10 +1,10 @@
 <section class="container">
-  <h2 class="title">Transferências</h2>
+  <h2 class="title">{{'TRANSFER.TRANSFER'| translate}}</h2>
   <table class="table">
     <thead class="table__header">
-      <th class="table__header__content">Data</th>
-      <th class="table__header__content">Valor</th>
-      <th class="table__header__content">Destino</th>
+      <th class="table__header__content">{{'EXTRACT.DATE' | translate}}</th>
+      <th class="table__header__content">{{'EXTRACT.VALUE' | translate}}</th>
+      <th class="table__header__content">{{'EXTRACT.DESTINY' | translate}}</th>
     </thead>
     <tbody *ngIf="transferencias.length > 0; else listaVazia">
       <tr class="table__line" *ngFor="let transferencia of transferencias, let i = index">
@@ -16,5 +16,5 @@
   </table>
 </section>
 <ng-template #listaVazia>
-  <td class="table__line__content">Nenhuma operação cadastrada!</td>
+  <td class="table__line__content">{{'EXTRACT.MESSAGE' | translate}}</td>
 </ng-template>

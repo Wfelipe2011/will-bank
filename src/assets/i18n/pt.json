@@ -1,0 +1,18 @@
+{
+    "NAV": {
+        "LINK": "Nova Transferência",
+        "LOGO": "Banco de Todos"
+    },
+    "TRANSFER": {
+        "TITLE": "Nova Transferência",
+        "DESTINY": "Destino",
+        "VALUE": "Valor",
+        "TRANSFER": "Transferir"
+    },
+    "EXTRACT": {
+        "DATE": "Data",
+        "VALUE": "Valor",
+        "DESTINY": "Destino",
+        "MESSAGE": "Nenhuma operação cadastrada!"
+    }
+}
